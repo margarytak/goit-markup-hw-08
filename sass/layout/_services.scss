@@ -1,0 +1,27 @@
+.services {
+  padding-top: 47px;
+}
+
+.services-list {
+  display: flex;
+}
+
+.services-list__item {
+  position: relative;
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.services-list__item-name {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white);
+  position: absolute;
+  background: var(--services-bcgd);
+  width: 100%;
+  bottom: 0;
+  padding: 27px 0;
+  text-align: center;
+}

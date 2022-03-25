@@ -1,0 +1,147 @@
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__contacts {
+  min-width: 230px;
+}
+
+.footer__studio {
+  color: var(--white);
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address-list__item {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--footer-text);
+  & + & {
+    margin-top: 9px;
+    margin-left: 0;
+  }
+}
+
+.address-list__map-link {
+  color: var(--white);
+}
+
+.address-list__link {
+  transition: var(--transition-link);
+  &:hover,
+  &:focus {
+    color: var(--white);
+  }
+}
+
+.footer__social {
+  margin-left: 70px;
+  margin-right: 93px;
+}
+
+.footer-social__title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.social-list {
+  margin-top: 20px;
+}
+
+.footer-social-list__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--footer-social-link-bcgd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-background);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-social-list__item + .footer-social-list__item {
+  margin-left: 10px;
+}
+
+.footer-social-list__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--white);
+}
+
+.footer-sign-up {
+  width: 50%;
+}
+
+.sign-up-form__label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.sign-up-form__input {
+  background: transparent;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--white);
+  padding-left: 15px;
+  border: 1px solid var(--footer-input-border);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+  outline: none;
+  transition: var(--transition-border);
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--footer-text);
+  }
+  &:not(:placeholder-shown) {
+    border-color: var(--accent-color);
+  }
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.sign-up-form__btn {
+  padding: 10px 28px 10px 29px;
+  display: flex;
+  align-items: center;
+}
+
+.sign-up-form__icon {
+  fill: var(--white);
+  margin-left: 10px;
+}
+
+.sign-up-form {
+  .sign-up-form__wrap {
+    display: flex;
+  }
+}
