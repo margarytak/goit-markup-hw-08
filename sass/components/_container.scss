@@ -1,5 +1,14 @@
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	@include mob {
+		width: 480px;
+	}
+	@include tab {
+		width: 768px;
+	}
+	@include desk {
+		width: 1200px;
+	}
 }

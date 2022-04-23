@@ -19,7 +19,7 @@
     <title lang="en">Web Studio</title>
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a class="logo navigation__logo" href="./" lang="en">Web<span class="navigation__studio">Studio</span></a>
@@ -48,11 +48,11 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="section hero">
         <div class="container">
-          <h1 class="hero__title">Эффективные решения <br />для вашего бизнеса</h1>
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="button hero__btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
@@ -114,7 +114,17 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img src="./images/team/igor.jpg" alt="фотография Игоря" width="270" height="260" />
+              <picture>
+                <source 
+                srcset="./images/team/igor.webp 1x, ./images/team/igor2x.webp 2x, ./images/team/igor.jpg 1x, ./images/team/igor2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+                <source 
+                srcset="./images/team/igor1xtab.webp 1x, ./images/team/igor2xtab.webp 2x, ./images/team/igor1xtab.jpg 1x, ./images/team/igor2xtab.jpg 2x"
+                  media="(min-width: 768px)"/>
+                  <source 
+                srcset="./images/team/igor1xmob.webp 1x, ./images/team/igor2xmob.webp 2x, ./images/team/igor1xmob.jpg 1x, ./images/team/igor2xmob.jpg 2x"/>
+                  <img src="./images/team/igor.jpg" alt="фотография Игоря" />
+              </picture>
               <div class="team-list__description">
                 <h3 class="team-list__text team-list__name">Игорь Демьяненко</h3>
                 <p class="team-list__text" lang="en">Product Designer</p>
@@ -151,7 +161,17 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/team/olga.jpg" alt="фотография Ольги" width="270" height="260" />
+              <picture>
+                <source 
+                srcset="./images/team/olga.webp 1x, ./images/team/olga2x.webp 2x, ./images/team/olga.jpg 1x, ./images/team/olga2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+                <source 
+                srcset="./images/team/olga1xtab.webp 1x, ./images/team/olga2xtab.webp 2x, ./images/team/olga1xtab.jpg 1x, ./images/team/olga2xtab.jpg 2x"
+                  media="(min-width: 768px)"/>
+                  <source 
+                srcset="./images/team/olga1xmob.webp 1x, ./images/team/olga2xmob.webp 2x, ./images/team/olga1xmob.jpg 1x, ./images/team/olga2xmob.jpg 2x"/>
+                  <img src="./images/team/olga.jpg" alt="фотография Ольги" />
+              </picture>
               <div class="team-list__description">
                 <h3 class="team-list__text team-list__name">Ольга Репина</h3>
                 <p class="team-list__text" lang="en">Frontend Developer</p>
@@ -188,7 +208,17 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/team/nikolai.jpg" alt="фотография Николая" width="270" height="260" />
+              <picture>
+                <source 
+                srcset="./images/team/nikolai.webp 1x, ./images/team/nikolai2x.webp 2x, ./images/team/nikolai.jpg 1x, ./images/team/nikolai2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+                <source 
+                srcset="./images/team/nikolai1xtab.webp 1x, ./images/team/nikolai2xtab.webp 2x, ./images/team/nikolai1xtab.jpg 1x, ./images/team/nikolai2xtab.jpg 2x"
+                  media="(min-width: 768px)"/>
+                  <source 
+                srcset="./images/team/nikolai1xmob.webp 1x, ./images/team/nikolai2xmob.webp 2x, ./images/team/nikolai1xmob.jpg 1x, ./images/team/nikolai2xmob.jpg 2x"/>
+                  <img src="./images/team/nikolai.jpg" alt="фотография Николая" />
+              </picture>
               <div class="team-list__description">
                 <h3 class="team-list__text team-list__name">Николай Тарасов</h3>
                 <p class="team-list__text" lang="en">Marketing</p>
@@ -225,7 +255,17 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/team/mihail.jpg" alt="фотография Михаила" width="270" height="260" />
+              <picture>
+                <source 
+                srcset="./images/team/mihail.webp 1x, ./images/team/mihail2x.webp 2x, ./images/team/mihail.jpg 1x, ./images/team/mihail2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+                <source 
+                srcset="./images/team/mihail1xtab.webp 1x, ./images/team/mihail2xtab.webp 2x, ./images/team/mihail1xtab.jpg 1x, ./images/team/mihail2xtab.jpg 2x"
+                  media="(min-width: 768px)"/>
+                  <source 
+                srcset="./images/team/mihail1xmob.webp 1x, ./images/team/mihail2xmob.webp 2x, ./images/team/mihail1xmob.jpg 1x, ./images/team/mihail2xmob.jpg 2x"/>
+                  <img src="./images/team/mihail.jpg" alt="фотография Михаила" />
+              </picture>
               <div class="team-list__description">
                 <h3 class="team-list__text team-list__name">Михаил Ермаков</h3>
                 <p class="team-list__text" lang="en">UI Designer</p>

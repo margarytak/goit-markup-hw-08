@@ -1,26 +1,49 @@
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.jpg);
-  text-align: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 1600px;
-  padding: 200px 0;
-  margin-right: auto;
-  margin-left: auto;
+	background-color: var(--footer-hero-bcgd);
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner-mob.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 118px 0;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	@include px-ratio {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner-mob-2x.jpg);
+	}
+	@include tab {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner-tab.jpg);
+		@include px-ratio {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner-tab-2x.jpg);
+		}
+	}
+	@include desk {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.jpg);
+		max-width: 1600px;
+		padding: 200px 0;
+		@include px-ratio {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner-2x.jpg);
+		}
+	}
 }
 
 .hero__title {
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white);
+	margin: 0 auto 30px auto;
+	font-weight: 900;
+	font-size: 26px;
+	line-height: 1.62;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #fff;
+	max-width: 360px;
+	@include desk {
+		font-size: 44px;
+		line-height: 1.36;
+		max-width: 696px;
+	}
 }
 
 .hero__btn {
-  padding: 10px 32px;
+	padding: 10px 32px;
 }
