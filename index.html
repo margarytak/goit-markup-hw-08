@@ -19,7 +19,7 @@
     <title lang="en">Web Studio</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a class="logo navigation__logo" href="./" lang="en">Web<span class="navigation__studio">Studio</span></a>
@@ -47,8 +47,57 @@
             >
           </li>
         </ul>
+        <button type="button" class="mob-menu-open__btn" mob-menu-open>
+          <svg class="mob-menu__btn-open" width="40px" height="40px">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" mob-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="mob-menu-close__btn" mob-menu-close>
+              <svg class="mob-menu__btn-close" width="40px" height="40px">
+                <use href="./images/icons.svg#icon-menu-close"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-nav">
+                <li class="mob-menu-nav__item"><a class="mob-menu-nav__link current" href="./">Студия</a></li>
+                <li class="mob-menu-nav__item"><a class="mob-menu-nav__link" href="./portfolio.html">Портфолио</a></li>
+                <li class="mob-menu-nav__item"><a class="mob-menu-nav__link" href="">Контакты</a></li>
+              </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="mob-menu-contacts">
+              <li class="mob-menu-contacts__item">
+                <a class="mob-menu-contacts__link tel" href="tel:+380961111111">
+                  +38 096 111 11 11</a>
+              </li>
+              <li class="mob-menu-contacts__item">
+                <a class="mob-menu-contacts__link email" href="mailto:info@devstudio.com">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu-social">
+              <li class="mob-menu-social__item">
+                <a class="mob-menu-social__link">Instagram</a>
+              </li>
+              <li class="mob-menu-social__item">
+                <a class="mob-menu-social__link">Twitter</a>
+              </li>
+              <li class="mob-menu-social__item">
+                <a class="mob-menu-social__link">Facebook</a>
+              </li>
+              <li class="mob-menu-social__item">
+                <a class="mob-menu-social__link">LinkedIn</a>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="section hero">
         <div class="container">
@@ -116,14 +165,24 @@
             <li class="team-list__item">
               <picture>
                 <source 
-                srcset="./images/team/igor.webp 1x, ./images/team/igor2x.webp 2x, ./images/team/igor.jpg 1x, ./images/team/igor2x.jpg 2x"
+                srcset="./images/team/igor.webp 1x,  ./images/team/igor2x.webp 2x"
+                  media="(min-width: 1200px)"/>
+                  <source 
+                srcset="./images/team/igor.jpg 1x, ./images/team/igor2x.jpg 2x"
                   media="(min-width: 1200px)"/>
                 <source 
-                srcset="./images/team/igor1xtab.webp 1x, ./images/team/igor2xtab.webp 2x, ./images/team/igor1xtab.jpg 1x, ./images/team/igor2xtab.jpg 2x"
+                srcset="./images/team/igor1xtab.webp 1x, ./images/team/igor2xtab.webp 2x"
                   media="(min-width: 768px)"/>
                   <source 
-                srcset="./images/team/igor1xmob.webp 1x, ./images/team/igor2xmob.webp 2x, ./images/team/igor1xmob.jpg 1x, ./images/team/igor2xmob.jpg 2x"/>
-                  <img src="./images/team/igor.jpg" alt="фотография Игоря" />
+                srcset="./images/team/igor1xtab.jpg 1x, ./images/team/igor2xtab.jpg 2x"
+                  media="(min-width: 768px)"/>
+                  <source 
+                srcset="./images/team/igor1xmob.webp 1x, ./images/team/igor2xmob.webp 2x"
+                  media="(min-width: 320px)"/>
+                  <source 
+                srcset="./images/team/igor1xmob.jpg 1x, ./images/team/igor2xmob.jpg 2x" 
+                  media="(min-width: 320px)"/>
+                <img src="./images/team/igor.jpg" alt="фотография Игоря" />
               </picture>
               <div class="team-list__description">
                 <h3 class="team-list__text team-list__name">Игорь Демьяненко</h3>
@@ -163,13 +222,23 @@
             <li class="team-list__item">
               <picture>
                 <source 
-                srcset="./images/team/olga.webp 1x, ./images/team/olga2x.webp 2x, ./images/team/olga.jpg 1x, ./images/team/olga2x.jpg 2x"
+                srcset="./images/team/olga.webp 1x, ./images/team/olga2x.webp 2x"
+                  media="(min-width: 1200px)"/>
+                  <source 
+                srcset="./images/team/olga.jpg 1x, ./images/team/olga2x.jpg 2x"
                   media="(min-width: 1200px)"/>
                 <source 
-                srcset="./images/team/olga1xtab.webp 1x, ./images/team/olga2xtab.webp 2x, ./images/team/olga1xtab.jpg 1x, ./images/team/olga2xtab.jpg 2x"
+                srcset="./images/team/olga1xtab.webp 1x, ./images/team/olga2xtab.webp 2x"
                   media="(min-width: 768px)"/>
                   <source 
-                srcset="./images/team/olga1xmob.webp 1x, ./images/team/olga2xmob.webp 2x, ./images/team/olga1xmob.jpg 1x, ./images/team/olga2xmob.jpg 2x"/>
+                srcset="./images/team/olga1xtab.jpg 1x, ./images/team/olga2xtab.jpg 2x"
+                  media="(min-width: 768px)"/>
+                  <source 
+                srcset="./images/team/olga1xmob.webp 1x, ./images/team/olga2xmob.webp 2x" 
+                media="(min-width: 320px)"/>
+                <source 
+                srcset="./images/team/olga1xmob.jpg 1x, ./images/team/olga2xmob.jpg 2x"
+                media="(min-width: 320px)"/>
                   <img src="./images/team/olga.jpg" alt="фотография Ольги" />
               </picture>
               <div class="team-list__description">
@@ -210,13 +279,23 @@
             <li class="team-list__item">
               <picture>
                 <source 
-                srcset="./images/team/nikolai.webp 1x, ./images/team/nikolai2x.webp 2x, ./images/team/nikolai.jpg 1x, ./images/team/nikolai2x.jpg 2x"
+                srcset="./images/team/nikolai.webp 1x, ./images/team/nikolai2x.webp 2x"
+                  media="(min-width: 1200px)"/>
+                  <source 
+                srcset="./images/team/nikolai.jpg 1x, ./images/team/nikolai2x.jpg 2x"
                   media="(min-width: 1200px)"/>
                 <source 
-                srcset="./images/team/nikolai1xtab.webp 1x, ./images/team/nikolai2xtab.webp 2x, ./images/team/nikolai1xtab.jpg 1x, ./images/team/nikolai2xtab.jpg 2x"
+                srcset="./images/team/nikolai1xtab.webp 1x, ./images/team/nikolai2xtab.webp 2x"
                   media="(min-width: 768px)"/>
                   <source 
-                srcset="./images/team/nikolai1xmob.webp 1x, ./images/team/nikolai2xmob.webp 2x, ./images/team/nikolai1xmob.jpg 1x, ./images/team/nikolai2xmob.jpg 2x"/>
+                srcset="./images/team/nikolai1xtab.jpg 1x, ./images/team/nikolai2xtab.jpg 2x"
+                  media="(min-width: 768px)"/>
+                  <source 
+                srcset="./images/team/nikolai1xmob.webp 1x, ./images/team/nikolai2xmob.webp 2x"
+                media="(min-width: 320px)"/>
+                <source 
+                srcset="./images/team/nikolai1xmob.jpg 1x, ./images/team/nikolai2xmob.jpg 2x"
+                media="(min-width: 320px)"/>
                   <img src="./images/team/nikolai.jpg" alt="фотография Николая" />
               </picture>
               <div class="team-list__description">
@@ -257,13 +336,23 @@
             <li class="team-list__item">
               <picture>
                 <source 
-                srcset="./images/team/mihail.webp 1x, ./images/team/mihail2x.webp 2x, ./images/team/mihail.jpg 1x, ./images/team/mihail2x.jpg 2x"
+                srcset="./images/team/mihail.webp 1x, ./images/team/mihail2x.webp 2x"
+                  media="(min-width: 1200px)"/>
+                  <source 
+                srcset="./images/team/mihail.jpg 1x, ./images/team/mihail2x.jpg 2x"
                   media="(min-width: 1200px)"/>
                 <source 
-                srcset="./images/team/mihail1xtab.webp 1x, ./images/team/mihail2xtab.webp 2x, ./images/team/mihail1xtab.jpg 1x, ./images/team/mihail2xtab.jpg 2x"
+                srcset="./images/team/mihail1xtab.webp 1x, ./images/team/mihail2xtab.webp 2x"
                   media="(min-width: 768px)"/>
                   <source 
-                srcset="./images/team/mihail1xmob.webp 1x, ./images/team/mihail2xmob.webp 2x, ./images/team/mihail1xmob.jpg 1x, ./images/team/mihail2xmob.jpg 2x"/>
+                srcset="./images/team/mihail1xtab.jpg 1x, ./images/team/mihail2xtab.jpg 2x"
+                  media="(min-width: 768px)"/>
+                  <source 
+                srcset="./images/team/mihail1xmob.webp 1x, ./images/team/mihail2xmob.webp 2x"
+                media="(min-width: 320px)"/>
+                <source 
+                srcset="./images/team/mihail1xmob.jpg 1x, ./images/team/mihail2xmob.jpg 2x"
+                media="(min-width: 320px)"/>
                   <img src="./images/team/mihail.jpg" alt="фотография Михаила" />
               </picture>
               <div class="team-list__description">
@@ -478,5 +567,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
