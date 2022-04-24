@@ -1,186 +1,206 @@
 .backdrop {
-  width: 100vw;
-  height: 100vh;
-  background: var(--backdrop-bcgd);
-  position: fixed;
-  top: 0;
-  transition: opacity 500ms, visibility 500ms;
+	width: 100vw;
+	height: 100vh;
+	background: var(--backdrop-bcgd);
+	position: fixed;
+	top: 0;
+	transition: opacity 500ms, visibility 500ms;
 }
 
 .backdrop.is-hidden {
-  .modal {
-    transform: translate(-50%, -50%) scale(0.3);
-  }
+	.modal {
+		transform: translate(-50%, -50%) scale(0.3);
+	}
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
-  background: var(--white);
-  padding: 40px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 500ms cubic-bezier(0.32, -0.44, 0.28, 1.61);
+	background: var(--white);
+	padding: 40px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1);
+	transition: transform 500ms cubic-bezier(0.32, -0.44, 0.28, 1.61);
+	@include mob {
+		width: 450px;
+		min-height: 609px;
+	}
+	@include desk {
+		width: 528px;
+		min-height: 581px;
+	}
 }
 
 .modal__close-btn {
-  width: 30px;
-  height: 30px;
-  background: var(--white);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  cursor: pointer;
-  &:focus {
-    outline: none;
-  }
-  &:hover .modal__icon-close,
-  &:focus .modal__icon-close {
-    fill: var(--accent-color);
-  }
+	width: 30px;
+	height: 30px;
+	background: var(--white);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	cursor: pointer;
+	&:focus {
+		outline: none;
+	}
+	&:hover .modal__icon-close,
+	&:focus .modal__icon-close {
+		fill: var(--accent-color);
+	}
 }
 
 .modal__icon-close {
-  fill: var(--black);
-  transition: var(--transition-icon);
+	fill: var(--black);
+	transition: var(--transition-icon);
 }
 
 .modal__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  color: var(--dark-text-color);
-  margin-bottom: 12px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+	color: var(--dark-text-color);
+	margin-bottom: 12px;
 }
 
 .modal-form div:not(:nth-of-type(n + 4)) {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .modal-form__label {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--text-color);
-  margin-bottom: 4px;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+	color: var(--text-color);
+	margin-bottom: 4px;
 }
 
 .modal-form__checkbox {
-  margin-top: 20px;
-  margin-bottom: 30px;
+	margin-top: 20px;
+	margin-bottom: 30px;
 }
 
 .modal-form__input,
 .modal-form__msg {
-  width: 100%;
-  height: 40px;
-  border: 1px solid var(--modal-input-border);
-  border-radius: 4px;
-  background: transparent;
-  color: var(--dark-text-color);
-  &:focus {
-    border-color: var(--accent-color);
-  }
+	width: 100%;
+	height: 40px;
+	border: 1px solid var(--modal-input-border);
+	border-radius: 4px;
+	background: transparent;
+	color: var(--dark-text-color);
+	&:focus {
+		border-color: var(--accent-color);
+	}
 }
 
 .modal-form__input {
-  height: 40px;
-  padding-left: 42px;
-  outline: none;
-  transition: var(--transition-border);
-  &:focus + .modal-form__icon {
-    fill: var(--accent-color);
-  }
+	height: 40px;
+	padding-left: 42px;
+	outline: none;
+	transition: var(--transition-border);
+	&:focus + .modal-form__icon {
+		fill: var(--accent-color);
+	}
 }
 
 .modal-form__msg {
-  padding: 12px 16px;
-  resize: none;
-  height: 120px;
-  outline: none;
-  transition: var(--transition-border);
-  &::placeholder {
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: var(--modal-placeholder);
-  }
+	padding: 12px 16px;
+	resize: none;
+	height: 120px;
+	outline: none;
+	transition: var(--transition-border);
+	&::placeholder {
+		font-size: 12px;
+		line-height: 1.16;
+		letter-spacing: 0.01em;
+		color: var(--modal-placeholder);
+	}
 }
 
 .modal-form__input-wrap {
-  position: relative;
-  display: block;
+	position: relative;
+	display: block;
 }
 
 .modal-form__icon {
-  width: 18px;
-  height: 18px;
-  fill: var(--dark-text-color);
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  transition: var(--transition-icon);
+	width: 18px;
+	height: 18px;
+	fill: var(--dark-text-color);
+	position: absolute;
+	top: 50%;
+	left: 12px;
+	transform: translateY(-50%);
+	transition: var(--transition-icon);
 }
 
 .modal-form__checkbox-label {
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--text-color);
-  display: flex;
-  align-items: center;
+	font-size: 12px;
+	line-height: 1.16;
+	color: var(--text-color);
+	display: flex;
+	align-items: center;
+	@include desk {
+		font-size: 14px;
+		line-height: 1.71;
+	}
 }
 
 .checkbox {
-  fill: transparent;
+	fill: transparent;
 }
 
 .modal-form__checkbox-label {
-  .modal-form__icon-wrap {
-    color: var(--dark-text-color);
-    width: 16px;
-    height: 15px;
-    border: 2px solid;
-    border-radius: 2px;
-    margin-right: 9px;
-    display: flex;
-    align-items: center;
-  }
+	.modal-form__icon-wrap {
+		color: var(--dark-text-color);
+		width: 16px;
+		height: 15px;
+		border: 2px solid;
+		border: 1px solid;
+		border-radius: 2px;
+		margin-right: 7px;
+		display: flex;
+		align-items: center;
+		@include desk {
+			margin-right: 9px;
+			border: 2px solid;
+		}
+	}
 }
 
 .modal-form__check:focus + .modal-form__checkbox-label > .modal-form__icon-wrap {
-  border-color: var(--accent-color);
+	border-color: var(--accent-color);
 }
 
 .modal-form__check:checked + .modal-form__checkbox-label > .modal-form__icon-wrap {
-  background-color: var(--accent-color);
-  border: none;
+	background-color: var(--accent-color);
+	border: none;
 }
 
 .modal-form__check:checked + .modal-form__checkbox-label svg {
-  fill: var(--white);
+	fill: var(--white);
 }
 
 .modal-form__link {
-  text-decoration: underline;
-  color: var(--accent-color);
-  margin-left: 3px;
-  font-size: 14px;
-  line-height: 1.71;
+	font-size: 12px;
+	line-height: 1.16;
+	text-decoration: underline;
+	color: var(--accent-color);
+	margin-left: 1px;
+	@include desk {
+		font-size: 14px;
+		line-height: 1.71;
+		margin-left: 5px;
+	}
 }
 
 .modal-form__btn {
-  padding: 10px 55px;
-  display: block;
-  margin: 0 auto;
+	padding: 10px 55px;
+	display: block;
+	margin: 0 auto;
 }
