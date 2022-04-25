@@ -32,7 +32,7 @@
         <ul class="header-contacts">
           <li class="header-contacts__item">
             <a class="header-contacts__link" href="mailto:info@devstudio.com">
-              <svg class="header-contacts__icon" width="16" height="12">
+              <svg class="header-contacts__icon header-email" width="14" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -40,27 +40,23 @@
           </li>
           <li class="header-contacts__item">
             <a class="header-contacts__link" href="tel:+380961111111">
-              <svg class="header-contacts__icon" width="10" height="16">
+              <svg class="header-contacts__icon header-phone" width="10" height="14">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
-        <button type="button" class="mob-menu-open__btn" mob-menu-open aria-expanded="false" aria-controls="mob-menu">
-          <svg class="mob-menu__btn-open" width="40px" height="40px">
-            <use href="./images/icons.svg#icon-burger-menu"></use>
+        <button type="button" class="menu-button" data-menu-button>
+          <svg class="mob-menu__btn" width="40px" height="40px">
+            <use class="menu-open" href="./images/icons.svg#icon-burger-menu"></use>
+            <use class="menu-close" href="./images/icons.svg#icon-menu-close"></use>
           </svg>
         </button>
       </div>
-      <div class="mob-menu" mob-menu>
+      <div class="mob-menu" data-menu>
         <div class="container">
           <div class="mob-menu-top">
-            <button type="button" class="mob-menu-close__btn" mob-menu-close>
-              <svg class="mob-menu__btn-close" width="40px" height="40px">
-                <use href="./images/icons.svg#icon-menu-close"></use>
-              </svg>
-            </button>
             <ul class="mob-menu-nav">
                 <li class="mob-menu-nav__item"><a class="mob-menu-nav__link current" href="./">Студия</a></li>
                 <li class="mob-menu-nav__item"><a class="mob-menu-nav__link" href="./portfolio.html">Портфолио</a></li>
