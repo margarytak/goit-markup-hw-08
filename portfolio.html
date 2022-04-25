@@ -101,14 +101,14 @@
 			<section class="section portfolio">
 				<div class="container">
 					<ul class="filter-list filter_list">
-						<li class="filter-list__item"><button class="filter-list__btn" type="button">Все</button></li>
-						<li class="filter-list__item"><button class="filter-list__btn" type="button">Веб-сайты</button></li>
-						<li class="filter-list__item"><button class="filter-list__btn" type="button">Приложения</button></li>
-						<li class="filter-list__item"><button class="filter-list__btn" type="button">Дизайн</button></li>
-						<li class="filter-list__item"><button class="filter-list__btn" type="button">Маркетинг</button></li>
+						<li class="filter-list__item"><button class="filter-list__btn" type="button" onclick="filterSelection('all')">Все</button></li>
+						<li class="filter-list__item"><button class="filter-list__btn" type="button" onclick="filterSelection('sites')">Веб-сайты</button></li>
+						<li class="filter-list__item"><button class="filter-list__btn" type="button" onclick="filterSelection('apps')">Приложения</button></li>
+						<li class="filter-list__item"><button class="filter-list__btn" type="button" onclick="filterSelection('design')">Дизайн</button></li>
+						<li class="filter-list__item"><button class="filter-list__btn" type="button" onclick="filterSelection('marketing')">Маркетинг</button></li>
 					</ul>
 					<ul class="portfolio-list">
-						<li class="portfolio-list_item">
+						<li class="portfolio-list_item sites">
 							<a class="portfolio-list_link" href="">
 								<div class="portfolio-list__wrap">
 									<picture>
@@ -139,7 +139,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="portfolio-list_item">
+						<li class="portfolio-list_item design">
 							<a class="portfolio-list_link" href="">
 								<div class="portfolio-list__wrap">
 									<picture>
@@ -181,7 +181,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="portfolio-list_item">
+						<li class="portfolio-list_item apps">
 							<a class="portfolio-list_link" href="">
 								<div class="portfolio-list__wrap">
 									<picture>
@@ -221,7 +221,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="portfolio-list_item">
+						<li class="portfolio-list_item marketing">
 							<a class="portfolio-list_link" href="">
 								<div class="portfolio-list__wrap">
 									<picture>
@@ -263,7 +263,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="portfolio-list_item">
+						<li class="portfolio-list_item apps">
 							<a class="portfolio-list_link" href="">
 								<div class="portfolio-list__wrap">
 									<picture>
@@ -305,7 +305,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="portfolio-list_item">
+						<li class="portfolio-list_item sites">
 							<a class="portfolio-list_link" href="">
 								<div class="portfolio-list__wrap">
 									<picture>
@@ -342,7 +342,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="portfolio-list_item">
+						<li class="portfolio-list_item design">
 							<a class="portfolio-list_link" href="">
 								<div class="portfolio-list__wrap">
 									<picture>
@@ -384,7 +384,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="portfolio-list_item">
+						<li class="portfolio-list_item marketing">
 							<a class="portfolio-list_link" href="">
 								<div class="portfolio-list__wrap">
 									<picture>
@@ -424,7 +424,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="portfolio-list_item">
+						<li class="portfolio-list_item apps">
 							<a class="portfolio-list_link" href="">
 								<div class="portfolio-list__wrap">
 									<picture>
@@ -542,5 +542,6 @@
 			</div>
 		</footer>
       <script src="./js/menu.js"></script>
+      <script src="./js/filter.js"></script>
 	</body>
 </html>
