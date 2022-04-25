@@ -161,6 +161,7 @@ img {
   position: fixed;
   top: 0;
   transition: opacity 500ms, visibility 500ms;
+  z-index: 20;
 }
 
 .backdrop.is-hidden .modal {
@@ -177,6 +178,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms cubic-bezier(0.32, -0.44, 0.28, 1.61);
+  width: 80%;
 }
 
 @media screen and (min-width: 480px) {
@@ -408,7 +410,6 @@ img {
 
 .mob-menu__btn {
   fill: var(--black);
-  transition: var(--transition-icon);
 }
 
 .menu-open {
