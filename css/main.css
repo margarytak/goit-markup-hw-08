@@ -397,8 +397,7 @@ img {
   outline: none;
 }
 
-.menu-button:hover .mob-menu__btn,
-.menu-button:focus .mob-menu__btn {
+.menu-button:active .mob-menu__btn {
   fill: var(--accent-color);
 }
 

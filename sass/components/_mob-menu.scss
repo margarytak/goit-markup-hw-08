@@ -12,8 +12,7 @@
 	&:focus {
 		outline: none;
 	}
-	&:hover .mob-menu__btn,
-	&:focus .mob-menu__btn {
+	&:active .mob-menu__btn {
 		fill: var(--accent-color);
 	}
 	@include tab {
@@ -23,7 +22,6 @@
 
 .mob-menu__btn {
 	fill: var(--black);
-	// transition: var(--transition-icon);
 }
 
 .menu-open {
